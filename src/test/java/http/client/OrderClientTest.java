@@ -44,10 +44,10 @@ public class OrderClientTest {
         Order order = orderClient.createOrderWithAuthUser(token, ingredients);
         assertEquals(order.getIngredients().size(), ingredients.getIngredients().size());
         for (int i = 0; i < order.getIngredients().size() - 1; i++) {
-            assertEquals(order.getIngredients().get(i).get_id(), ingredients.getIngredients().get(i));
+            assertEquals(order.getIngredients().get(i).getId(), ingredients.getIngredients().get(i));
         }
 
-        assertNotNull(order.get_id());
+        assertNotNull(order.getId());
         assertNotNull(order.getStatus());
         assertTrue(order.getNumber() > 0);
         assertTrue(order.getPrice() > 0);
@@ -68,7 +68,7 @@ public class OrderClientTest {
         token = userClient.login(credentials);
 
         assertNull(order.getIngredients());
-        assertNull(order.get_id());
+        assertNull(order.getId());
         assertNull(order.getOrderUser());
         assertNull(order.getStatus());
         assertNull(order.getName());

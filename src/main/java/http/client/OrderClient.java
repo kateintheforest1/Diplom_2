@@ -25,7 +25,7 @@ public class OrderClient extends BaseClient {
                 .assertThat()
                 .statusCode(200)
                 .extract()
-                .path("data._id");
+                .path("data.id");
 
         List<String> ingredientsForBurger = new ArrayList<>();
         for (int i = 0; i < countIngredients; i++) {

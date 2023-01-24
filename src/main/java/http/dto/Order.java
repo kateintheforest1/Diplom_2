@@ -7,7 +7,7 @@ import java.util.List;
 @Data
 public class Order {
     private List<Ingredient> ingredients;
-    private String _id;
+    private String id;
     private OrderUser orderUser;
     private String status;
     private String name;
