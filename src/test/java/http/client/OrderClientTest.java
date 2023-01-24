@@ -1,6 +1,6 @@
 package http.client;
 
-import generator.UserGenerator;
+import http.generator.UserGenerator;
 import http.dto.Ingredients;
 import http.dto.Order;
 import http.dto.Token;

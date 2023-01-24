@@ -1,14 +1,13 @@
 package http.client;
 
 import com.google.gson.JsonObject;
-import generator.UserdataGenerator;
-import generator.UserGenerator;
+import http.generator.UserdataGenerator;
+import http.generator.UserGenerator;
 import http.dto.Token;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import http.model.Credentials;
 import http.model.User;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

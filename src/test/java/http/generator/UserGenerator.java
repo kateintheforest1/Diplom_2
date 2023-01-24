@@ -1,9 +1,9 @@
-package generator;
+package http.generator;
 
 import lombok.Data;
 import http.model.User;
 
-import static generator.UserdataGenerator.*;
+import static http.generator.UserdataGenerator.*;
 
 @Data
 public class UserGenerator {
